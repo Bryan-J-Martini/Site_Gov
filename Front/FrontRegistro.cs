@@ -46,6 +46,12 @@ namespace Projeto.Front
                 MessageBox.Show("Usuário já existe!");
                 return;
             }
+            if(!Validador.ValidarDocumento(documento))
+            {
+                MessageBox.Show("Documento inválido!");
+                return;
+            }
+
 
             // cria usuário
             service.CriarUsuario(usuario, senha, email, documento);
