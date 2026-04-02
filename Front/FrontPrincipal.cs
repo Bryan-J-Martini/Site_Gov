@@ -11,5 +11,10 @@
         {
             new CriarPonto().ShowDialog();
         }
+
+        private void btnParticipar_Click(object sender, EventArgs e)
+        {
+            new ParticiparPonto().ShowDialog();
+        }
     }
 }
